@@ -26,12 +26,6 @@ jobs:
             cd /var/www/my-apps/burundi-buhire-app-api/
             git config --global --add safe.directory /var/www/my-apps/burundi-buhire-app-api
 
-            # Fix permissions if necessary
-            sudo chown -R deployer:deployer .git
-
-            # Remove stale FETCH_HEAD if it exists
-            rm -f .git/FETCH_HEAD
-
             # Pull the latest code
             git pull origin master
           
