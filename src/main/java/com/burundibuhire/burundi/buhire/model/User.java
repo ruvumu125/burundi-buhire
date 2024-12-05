@@ -76,16 +76,14 @@ public class User extends AbstractEntity implements UserDetails {
     @Column(name = "place_of_birth", nullable = false)
     private String placeOfBirth;
 
-    @Lob
-    @Column(name = "passport_photo",nullable = true,columnDefinition = "LONGBLOB")
-    private byte[] passportPhoto; // Profile picture
 
-    @Lob
-    @Column(name = "identity_card_front_side_picture",nullable = true,columnDefinition = "LONGBLOB")
-    private byte[] identityCardFrontSidePicture; // ID picture
+    @Column(name = "passport_photo",nullable = true,columnDefinition = "bytea")
+    private byte[] passportPhoto;
 
-    @Lob
-    @Column(name = "identity_card_back_side_picture",nullable = true,columnDefinition = "LONGBLOB")
+    @Column(name = "identity_card_front_side_picture",nullable = true,columnDefinition = "bytea")
+    private byte[] identityCardFrontSidePicture;
+
+    @Column(name = "identity_card_back_side_picture",nullable = true,columnDefinition = "bytea")
     private byte[] identityCardBackSidePicture;
 
     @Column(name = "isuseractive")

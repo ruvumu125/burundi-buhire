@@ -35,12 +35,12 @@ public class CandidateMember extends AbstractEntity {
     @OneToMany(mappedBy = "candidateMember")
     private List<PoliticalHistory> politicalHistories;
 
-    @Lob
-    @Column(name = "certificate_of_residence", columnDefinition = "LONGBLOB", nullable = true)
+
+    @Column(name = "certificate_of_residence", columnDefinition = "bytea", nullable = true)
     private byte[] certificateOfResidence;
 
-    @Lob
-    @Column(name = "certificate_of_registration", columnDefinition = "LONGBLOB", nullable = true)
+
+    @Column(name = "certificate_of_registration", columnDefinition = "bytea", nullable = true)
     private byte[] certificateOfRegistration;
 
 
