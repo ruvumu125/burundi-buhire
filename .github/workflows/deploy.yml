@@ -25,5 +25,8 @@ jobs:
             # Navigate to the directory where your application is
             cd /var/www/my-apps/burundi-buhire-app-api/
             git config --global --add safe.directory /var/www/my-apps/burundi-buhire-app-api
+
+            # Pull the latest code
+            git pull origin master
           
           EOF
