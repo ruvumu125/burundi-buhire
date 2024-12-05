@@ -29,10 +29,10 @@ jobs:
             cd /var/www/my-apps/burundi-buhire-app-api/ 
             
             # Configure git directory as safe
-            git config --global --add safe.directory /var/www/my-apps/burundi-buhire-app-api
+            #git config --global --add safe.directory /var/www/my-apps/burundi-buhire-app-api
 
             # Pull the latest changes
-            #git pull origin master
+            git pull origin master
             
           
           EOF
