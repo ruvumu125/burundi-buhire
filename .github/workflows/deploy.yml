@@ -25,9 +25,6 @@ jobs:
             # Navigate to your application directory
             cd /var/www/my-apps/burundi-buhire-app-api/
 
-            # Ensure git uses SSH for GitHub
-            git remote set-url origin git@github.com:ruvumu125/burundi-buhire.git
-
             # Configure git directory as safe
             git config --global --add safe.directory /var/www/my-apps/burundi-buhire-app-api
 
