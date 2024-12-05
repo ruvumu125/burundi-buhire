@@ -30,5 +30,6 @@ jobs:
 
             # Pull the latest changes
             git pull origin master
+            
           
           EOF
