@@ -24,7 +24,7 @@ jobs:
 
             # Navigate to your application directory
             cd /var/www/my-apps/burundi-buhire-app-api/
-
+            
             # Configure git directory as safe
             git config --global --add safe.directory /var/www/my-apps/burundi-buhire-app-api
 
